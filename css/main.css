@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+body {
+  font-family: 'montserrat', sans-serif;
+  font-size: 16px;
+  background: #202123;
+}
+a {
+  text-decoration: none;
+}
+.header {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  width: 100%;
+  background-color: rgba(32,33,35,0.8);
+  backdrop-filter: blur(12px);
+  color: #fff;
+  z-index: 10;
+}
+.header a {
+  color: #fff;
+}
+.header .container {
+  max-width: 1460px;
+  padding: 20px 16px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  user-select: none;
+}
+.header .navbar {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+@media screen and (max-width: 460px) {
+  .header .container {
+    flex-direction: column;
+    gap: 10px;
+    align-items: baseline;
+  }
+}
+main {
+  max-width: 1460px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+main a {
+  color: #fff;
+}
+main .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+main .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+}
+main ul {
+  list-style: none;
+}
+main li {
+  padding: 4px 0;
+}
+main li.title {
+  font-size: 1.4rem;
+}
+main li:not(.title) {
+  opacity: 0.7;
+}
+main li:not(.title):hover {
+  opacity: 1;
+}
+.devs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+  padding: 0 16px;
+  max-width: 1460px;
+  margin: 0 auto;
+}
+section {
+  position: relative;
+  width: 100%;
+}
+section img {
+  width: 100%;
+  border-radius: 12px;
+}
+section .link {
+  width: fit-content;
+  display: block;
+  padding: 8px;
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.7;
+}
+section .link:hover {
+  opacity: 1;
+}
