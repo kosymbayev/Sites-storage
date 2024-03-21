@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+}
+body {
+  min-width: 320px;
+}
+img {
+  user-select: none;
+}
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background: #efefef;
+}
+nav {
+  display: flex;
+  align-items: center;
+  padding: 20px 8%;
+  background: #1d2026;
+}
+nav .menu_img {
+  width: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+nav .logo {
+  width: 160px;
+  cursor: pointer;
+}
+nav ul {
+  flex: 1;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+}
+nav ul a {
+  text-decoration: none;
+  color: #fff;
+}
+nav button {
+  background: #efefef;
+  height: 30px;
+  width: 60px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: background 0.5s, margin-left 0.5s;
+}
+nav button span {
+  display: block;
+  background: #999;
+  height: 26px;
+  width: 26px;
+  border-radius: 50%;
+  margin-left: 2px;
+  transition: background 0.5s, margin-left 0.5s;
+}
+.lamp_container {
+  position: absolute;
+  top: -20px;
+  left: 22%;
+  width: 200px;
+}
+.lamp_container .lamp {
+  width: 100%;
+}
+.lamp_container .light {
+  position: absolute;
+  top: 97%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  margin-left: -10px;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.text_container {
+  max-width: 600px;
+  margin-top: 7%;
+  margin-left: 48%;
+}
+.text_container h1 {
+  font-size: 80px;
+  font-weight: 400;
+}
+.text_container a {
+  text-decoration: none;
+  background: #00986f;
+  padding: 14px 40px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  margin-top: 30px;
+  border-radius: 30px;
+}
+body.dark .main {
+  background: #1d2026;
+  color: #fff;
+}
+body.dark button {
+  background: #00986f;
+}
+body.dark button span {
+  background: #fff;
+  margin-left: 31px;
+}
+body.dark .light {
+  opacity: 1 !important;
+}
+@media screen and (min-width: 1029px) {
+  nav .close {
+    display: none;
+  }
+  nav .menu_img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1028px) {
+  nav .logo {
+    z-index: 3;
+  }
+  nav ul {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    z-index: 10;
+    opacity: 0.98;
+    transition: left 0.5s;
+  }
+  nav ul.active {
+    left: 0;
+  }
+  nav ul li {
+    display: block;
+    margin: 0;
+  }
+  nav ul a {
+    display: block;
+    text-decoration: none;
+    padding: 14px 5px 14px 14px;
+    background: #1d2026;
+    display: block;
+    min-width: 200px;
+    font-size: 17px;
+  }
+  nav ul .close {
+    position: relative;
+  }
+  nav ul .close:before,
+  nav ul .close:after {
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: 70px;
+    width: 2px;
+    height: 14px;
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  nav ul .close:before {
+    transform: rotate(45deg);
+  }
+  nav ul .close:after {
+    transform: rotate(135deg);
+  }
+  nav button {
+    margin-left: auto;
+  }
+  .lamp_container {
+    left: 15%;
+    width: 160px;
+  }
+  .text_container {
+    margin-top: 5%;
+    margin-left: 44%;
+  }
+  .text_container h1 {
+    font-size: 60px;
+  }
+  .text_container p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 646px) {
+  .lamp_container {
+    left: calc(50% - 55px);
+    width: 110px;
+  }
+  .lamp_container .light {
+    top: 97%;
+    left: 53%;
+    width: 430px;
+  }
+  .text_container {
+    margin: 144px 20px 0 20px;
+  }
+  .text_container h1 {
+    font-size: 46px;
+  }
+  .text_container a {
+    margin-left: calc(50% - 124px);
+  }
+}

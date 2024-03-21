@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, width=device-width" name="viewport">
+    <title>VueLamp - landing</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+        <nav>
+            <img src="img/menu.png" alt="" class='menu_img' onclick='openMenu()'>
+            <img src="img/logo.png" alt="" class='logo'>
+            <ul>
+                <li class='close'><a href="" onclick='closeMenu(); return false'>Menu</a></li>
+                <li><a href="">Latest</a></li>
+                <li><a href="">Modern</a></li>
+                <li><a href="">Contemporary</a></li>
+                <li><a href="">Affordable</a></li>
+            </ul>
+            <button type='button' onclick='toggleMode()' id='btn'><span></span></button>
+        </nav>
+
+        <div class="lamp_container">
+            <img src="img/lamp.png" alt="lamp" class='lamp'>
+            <img src="img/light.png" alt="light" class='light'>
+        </div>
+
+        <div class="text_container">
+            <h1>Latest<br>in Lightning</h1>
+            <p>This is the first lamp from our company. We're making a huge collection of modern Lamps in all categories from home use to office use.</p>
+            <a href="">Check All Collections</a>
+        </div>
+    </div>
+
+    <script>
+        var body = document.querySelector('body')
+        var nav = document.querySelector('nav ul')
+
+        if( localStorage.getItem('mode') == 'dark' )
+        {
+            body.classList.add('dark')
+        }
+        else if( localStorage.getItem('mode') == 'light' )
+        {
+            body.classList.remove('dark')
+        }
+
+        function toggleMode()
+        {
+            if( localStorage.getItem('mode') == 'dark' )
+            {
+                localStorage.setItem('mode', 'light')
+                body.classList.remove('dark')
+            }
+            else if( localStorage.getItem('mode') == 'light' )
+            {
+                localStorage.setItem('mode', 'dark')
+                body.classList.add('dark')
+            }
+            else
+            {
+                localStorage.setItem('mode', 'dark')
+                body.classList.add('dark')
+            }
+        }
+
+        function openMenu()
+        {
+            nav.classList.add('active')
+        }
+        function closeMenu()
+        {
+            nav.classList.remove('active')
+        }
+
+    </script>
+</body>
+</html>
