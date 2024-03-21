@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "MontserratBold";
+  src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontserratMedium";
+  src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "MontserratRegular";
+  src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face {
+  font-family: "Calypso";
+  src: url("../fonts/Calypso.ttf") format("truetype");
+  font-style: normal;
+}
+.k-catalog-products .k-catalog-products-block {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+.k-catalog-products .k-catalog-products-item-img {
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.k-catalog-products .k-catalog-products-item-text {
+  margin-top: 20px;
+  padding-top: 8px;
+  border-top: 1px solid #181818;
+}
+@media screen and (min-width: 1024px) {
+  .k-catalog-products {
+    margin-top: 180px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .k-catalog-products {
+    margin-top: 64px;
+  }
+}

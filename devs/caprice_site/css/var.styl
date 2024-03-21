@@ -1,0 +1,53 @@
+// FONTS
+// Montserrat
+@font-face {
+    font-family: "MontserratBold"; 
+    src: url("../fonts/Montserrat-Bold.ttf") format("truetype"); 
+    font-style: normal;
+} 
+@font-face {
+    font-family: "MontserratMedium"; 
+    src: url("../fonts/Montserrat-Medium.ttf") format("truetype"); 
+    font-style: normal;
+} 
+@font-face {
+    font-family: "MontserratRegular"; 
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype"); 
+    font-style: normal;
+} 
+// Calypso
+@font-face {
+    font-family: "Calypso"; 
+    src: url("../fonts/Calypso.ttf") format("truetype"); 
+    font-style: normal;
+} 
+
+// VARS
+
+// MIXINS
+// Fonts
+font(size = font_size, up = false)
+	font-family 'MontserratMedium'
+	font-size size
+	font-weight: normal
+	if up
+		text-transform uppercase
+fontB(size = font_size, up = false)
+	font-family 'MontserratBold'
+	font-size size
+	font-weight: normal
+	if up
+		text-transform uppercase
+fontR(size = font_size, up = false)
+	font-family 'MontserratRegular'
+	font-size size
+	font-weight: normal
+	if up
+		text-transform uppercase
+
+fontC(size = font_size, up = false)
+	font-family 'Calypso'
+	font-size size
+	font-weight 400
+	if up
+		text-transform uppercase

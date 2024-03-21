@@ -1,0 +1,24 @@
+@import 'var.styl'
+
+// CATALOG PRODUCTS
+.k-catalog-products
+    .k-container{}
+    .k-catalog-products-block
+        display: grid
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr))
+        gap 30px
+    .k-catalog-products-item{}
+    .k-catalog-products-item-img
+        aspect-ratio: 1/1
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+    .k-catalog-products-item-text
+        margin-top 20px
+        padding-top 8px
+        border-top: 1px solid #181818
+
+    @media screen and (min-width 1024px)
+        margin-top 180px
+    @media screen and (max-width 1024px)
+        margin-top 64px

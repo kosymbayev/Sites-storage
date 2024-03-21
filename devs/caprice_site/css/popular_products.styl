@@ -1,0 +1,99 @@
+@import 'var.styl'
+
+// POPULAR PRODUCTS
+.k-popular-products
+    .k-container{}
+    .k-popular-products-block{}
+    // SWIPER
+    .productsSwiper
+        .swiper-wrapper
+            padding-bottom: 30px
+        .swiper-scrollbar
+            background: #F2F2F2
+            border-radius: 0
+            bottom 0
+            left: 0;
+            right: 0;
+            width: auto;
+        .swiper-scrollbar-drag
+            background: #181818
+            border-radius: 0
+    @media screen and (min-width 1024px)
+        margin-top 180px
+    @media screen and (max-width 1024px)
+        margin-top 64px
+
+// ITEM
+.k-product
+    position relative
+    padding 20px 16px 22px
+    background: #F2F2F2
+    color #181818
+    .k-product-favorite
+        position: absolute
+        top 20px
+        right 16px
+        width 28px
+        height 28px
+        background: url('../img/heart__black.svg')
+        cursor: pointer
+
+    .k-product-img
+        aspect-ratio: 1/1
+        background-position: center
+        background-repeat: no-repeat
+        background-size: cover
+
+    .k-product-info
+        display: flex
+        justify-content: space-between
+        margin-top 12px
+        padding-bottom 11px
+        border-bottom: 1px solid rgba(24, 24, 24, 0.1)
+    .k-product-text
+        width: calc(100% - 94px);
+    .k-product-name
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        font(18px)
+        color #181818
+    .k-product-category
+        font(12px)
+    .k-product-price-block
+        text-align: right
+    .k-product-price
+        fontB(18px)
+    .k-product-volume
+        font(12px)
+        opacity 0.5
+
+    .k-product-btns
+        display flex
+        gap 12px
+        margin-top 20px
+        button
+            outline 0
+            background-color: unset
+            border: 1px solid #181818;
+            border-radius: 0
+            font(16px)
+            text-align: center
+            cursor pointer
+            transition: color 0.25s, background-color 0.25s, background-image 0.25s
+            &:hover
+                color #fff
+                background-color: #181818
+        .k-product-buy-fast
+            padding 16px 10px
+            flex: 1;
+        .k-product-buy
+            min-width 64px
+            height auto
+            background-image: url('../img/cart__black.svg')
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 24px
+            &:hover
+                background-image: url('../img/cart__white.svg')

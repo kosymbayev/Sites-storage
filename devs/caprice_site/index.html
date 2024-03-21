@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Caprice</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/advantages.css">
+    <link rel="stylesheet" href="./css/catalog_products.css">
+    <link rel="stylesheet" href="./css/popular_products.css">
+</head>
+<body>
+
+    <header class="k-header"><!-- HEADER -->
+        <div class="k-container">
+            <div class="k-header-top">
+                <a class="k-header-phone" href="tel:+7(800)123-45-56">+7(800)123-45-56</a>
+                <a class="k-header-logo" href="#"><img src="./img/logo.png" alt="logo"></a>
+                <div class="k-header-links">
+                    <a class="k-header-link k-header-link-phone" href="tel:+7(800)123-45-56"><img src="./img/phone.png" alt="logo"></a>
+                    <a class="k-header-link" href="#"><img src="./img/search.png" alt="logo"></a>
+                    <a class="k-header-link" href="#"><img src="./img/user.png" alt="logo"></a>
+                    <a class="k-header-link" href="#"><img src="./img/heart.png" alt="logo"></a>
+                </div>
+            </div>
+            <a class="k-header-links-btn" onclick="kToggleMenu(); return false"><img src="./img/menu.png" alt=""> Меню</a>
+            <div class="k-header-bottom">
+                <a href="#" class="k-header-page">Главная</a>
+                <a href="#" class="k-header-page">О компании</a>
+                <a href="#" class="k-header-page">Каталог</a>
+                <a href="#" class="k-header-page"s>Контакты</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="k-hero"><!-- HERO -->
+        <div class="k-container">
+            <div class="k-hero-block">
+                <h1 class="k-hero-title">Добро пожаловать <br>в магазин</h1>
+                <p class="k-hero-text">Caprice - это интернет-магазин, где представлен полный спектр профессиональной косметикиведущих мировых производителей – от косметических средств до техники и сопутствующих.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="k-advantages"><!-- ADVANTAGES -->
+        <div class="k-container">
+            <h2>Наши преимущества</h2>
+            <div class="k-advantages-block">
+                <div class="k-advantages-item">
+                    <img src="./img/advantages/adv1.png" alt="">
+                    <p class="k-advantages-item-text">
+                        <b>Большой ассортимент.</b><br>Более 1000 товаров
+                    </p>
+                </div>
+                <div class="k-advantages-item">
+                    <img src="./img/advantages/adv2.png" alt="">
+                    <p class="k-advantages-item-text">
+                        <b>Цены ниже,</b><br>чем у конкурентов на 20%
+                    </p>
+                </div>
+                <div class="k-advantages-item">
+                    <img src="./img/advantages/adv3.png" alt="">
+                    <p class="k-advantages-item-text">
+                        <b>Бесплатная доставка</b><br>по Москве от 1000₽
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="k-catalog-products"><!-- CATALOG PRODUCTS -->
+        <div class="k-container">
+            <h2>Каталог товаров</h2>
+            <div class="k-catalog-products-block">
+                <a class="k-catalog-products-item" href="#">
+                    <div class="k-catalog-products-item-img" style="background-image: url(./img/catalog-products/3.png);"></div>
+                    <div class="k-catalog-products-item-text">Оборудование</div>
+                </a>
+                <a class="k-catalog-products-item" href="#">
+                    <div class="k-catalog-products-item-img" style="background-image: url(./img/catalog-products/1.png);"></div>
+                    <div class="k-catalog-products-item-text">Косметика</div>
+                </a>
+                <a class="k-catalog-products-item" href="#">
+                    <div class="k-catalog-products-item-img" style="background-image: url(./img/catalog-products/2.png);"></div>
+                    <div class="k-catalog-products-item-text">Парфюмерия</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="k-popular-products"><!-- POPULAR PRODUCTS -->
+        <div class="k-container">
+            <h2>Каталог товаров</h2>
+            <div class="swiper productsSwiper k-popular-products-block">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide k-product" href="#">
+                        <div class="k-product-favorite"></div>
+                        <div class="k-product-img" style="background-image: url(./img/popular-products/1.png);"></div>
+                        <div class="k-product-info">
+                            <div class="k-product-text">
+                                <a class="k-product-name" href="">LE LABO Ambrette</a>
+                                <div class="k-product-category">Парфюмерная вода </div>
+                            </div>
+                            <div class="k-product-price-block">
+                                <div class="k-product-price">21 455₽</div>
+                                <div class="k-product-volume">100мл</div>
+                            </div>
+                        </div>
+                        <div class="k-product-btns">
+                            <button class="k-product-buy-fast">
+                                Купить в один клик
+                            </button>
+                            <button class="k-product-buy"></button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide k-product" href="#">
+                        <div class="k-product-favorite"></div>
+                        <div class="k-product-img" style="background-image: url(./img/popular-products/2.png);"></div>
+                        <div class="k-product-info">
+                            <div class="k-product-text">
+                                <a class="k-product-name" href="">LE LABO Ambrette</a>
+                                <div class="k-product-category">Парфюмерная вода </div>
+                            </div>
+                            <div class="k-product-price-block">
+                                <div class="k-product-price">21 455₽</div>
+                                <div class="k-product-volume">100мл</div>
+                            </div>
+                        </div>
+                        <div class="k-product-btns">
+                            <button class="k-product-buy-fast">
+                                Купить в один клик
+                            </button>
+                            <button class="k-product-buy"></button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide k-product" href="#">
+                        <div class="k-product-favorite"></div>
+                        <div class="k-product-img" style="background-image: url(./img/popular-products/3.png);"></div>
+                        <div class="k-product-info">
+                            <div class="k-product-text">
+                                <a class="k-product-name" href="">LE LABO Ambrette</a>
+                                <div class="k-product-category">Парфюмерная вода </div>
+                            </div>
+                            <div class="k-product-price-block">
+                                <div class="k-product-price">21 455₽</div>
+                                <div class="k-product-volume">100мл</div>
+                            </div>
+                        </div>
+                        <div class="k-product-btns">
+                            <button class="k-product-buy-fast">
+                                Купить в один клик
+                            </button>
+                            <button class="k-product-buy"></button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide k-product" href="#">
+                        <div class="k-product-favorite"></div>
+                        <div class="k-product-img" style="background-image: url(./img/popular-products/1.png);"></div>
+                        <div class="k-product-info">
+                            <div class="k-product-text">
+                                <a class="k-product-name" href="">LE LABO Ambrette</a>
+                                <div class="k-product-category">Парфюмерная вода </div>
+                            </div>
+                            <div class="k-product-price-block">
+                                <div class="k-product-price">21 455₽</div>
+                                <div class="k-product-volume">100мл</div>
+                            </div>
+                        </div>
+                        <div class="k-product-btns">
+                            <button class="k-product-buy-fast">
+                                Купить в один клик
+                            </button>
+                            <button class="k-product-buy"></button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide k-product" href="#">
+                        <div class="k-product-favorite"></div>
+                        <div class="k-product-img" style="background-image: url(./img/popular-products/2.png);"></div>
+                        <div class="k-product-info">
+                            <div class="k-product-text">
+                                <a class="k-product-name" href="">LE LABO Ambrette</a>
+                                <div class="k-product-category">Парфюмерная вода </div>
+                            </div>
+                            <div class="k-product-price-block">
+                                <div class="k-product-price">21 455₽</div>
+                                <div class="k-product-volume">100мл</div>
+                            </div>
+                        </div>
+                        <div class="k-product-btns">
+                            <button class="k-product-buy-fast">
+                                Купить в один клик
+                            </button>
+                            <button class="k-product-buy"></button>
+                        </div>
+                    </div>
+                    <div class="swiper-slide k-product" href="#">
+                        <div class="k-product-favorite"></div>
+                        <div class="k-product-img" style="background-image: url(./img/popular-products/3.png);"></div>
+                        <div class="k-product-info">
+                            <div class="k-product-text">
+                                <a class="k-product-name" href="">LE LABO Ambrette</a>
+                                <div class="k-product-category">Парфюмерная вода </div>
+                            </div>
+                            <div class="k-product-price-block">
+                                <div class="k-product-price">21 455₽</div>
+                                <div class="k-product-volume">100мл</div>
+                            </div>
+                        </div>
+                        <div class="k-product-btns">
+                            <button class="k-product-buy-fast">
+                                Купить в один клик
+                            </button>
+                            <button class="k-product-buy"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="k-footer">
+        <div class="k-container">
+            <a class="k-footer-logo" href="#"><img src="./img/logo.png" alt="logo"></a>
+
+            <ul class="k-footer-ul">
+                <li class="k-footer-ul-title">Интернет магазин</li>
+                <Li><a href="#">Главная</a></Li>
+                <Li><a href="#">О компании</a></Li>
+                <Li><a href="#">Каталог</a></Li>
+                <Li><a href="#">Контакты</a></Li>
+            </ul>
+
+            <ul class="k-footer-ul">
+                <li class="k-footer-ul-title">Контакты</li>
+                <Li><a href="#">+7(800)123-45-56</a></Li>
+                <Li>г. Москва, Варшавское шоссе, д.125</Li>
+            </ul>
+
+            <div class="k-footer-mess">Прием заказов в интернет-магазине 24 часа!</div>
+
+            <div class="k-footer-copy">© 2022 Тестовая работа. Все права защищены</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var productsSwiper = new Swiper(".productsSwiper", {
+            slidesPerView: 1,
+            centeredSlides: false,
+            slidesPerGroupSkip: 1,
+            grabCursor: true,
+            spaceBetween: 30,
+            keyboard: {
+                enabled: true,
+            },
+            breakpoints: {
+                1024: {
+                    slidesPerView: 3,
+                },
+                640: {
+                    slidesPerView: 2,
+                },
+            },
+            scrollbar: {    
+                el: ".swiper-scrollbar",
+            },
+        });
+
+        var nav = document.querySelector('.k-header-bottom')
+        function kToggleMenu()
+        {
+            nav.classList.toggle('k-header-bottom__active')
+        }
+    </script>
+</body>
+</html>
