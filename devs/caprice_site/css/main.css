@@ -200,7 +200,6 @@ b {
     left: 20px;
     right: 20px;
     gap: 22px;
-    top: 100%;
     background: #181818;
     opacity: 0.98;
     transition: max-height 0.25s, padding 0.25s;
